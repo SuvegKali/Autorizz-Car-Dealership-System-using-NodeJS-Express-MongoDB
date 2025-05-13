@@ -33,8 +33,8 @@ body {
 }
 
 #l1 {
-  width: 250px;
-  height: 35px;
+  width: 500px;
+  height: 300px;
   margin-left: 0px;
 }
 
@@ -95,8 +95,8 @@ img::-moz-selection {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;

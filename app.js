@@ -6,6 +6,7 @@ const logger = require('morgan');
 const exphbs = require('express-handlebars');
 const mongoose = require('mongoose');
 const compression = require('compression');
+const cors = require('cors');
 
 const electricRouter = require('./routes/electric_index');
 const gasRouter = require('./routes/gas_index');
@@ -54,10 +55,13 @@ app.use(compression());
 
 console.log("App running on Localhost:5000");
 
+// Add the CORS middleware here (before routes)
+app.use(cors());
+
 
 // Routing
 app.get('/', (req, res) => {
-    res.redirect('/home');
+    res.redirect('/gas');
 });
 
 
